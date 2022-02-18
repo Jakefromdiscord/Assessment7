@@ -15,4 +15,4 @@ console.log(Unquie('Moon'))
 console.log(Unquie('Jake'))
 
 //Big O
-//ANSWER: O(n^2)
+//ANSWER: TC:O(n^2) SC: O(n^2)
