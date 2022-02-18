@@ -13,3 +13,6 @@ for(let i = 0; i < char.length; i++){
 
 console.log(Unquie('Moon'))
 console.log(Unquie('Jake'))
+
+//Big O
+//ANSWER: O(n^2)
