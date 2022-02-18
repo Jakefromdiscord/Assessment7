@@ -1,0 +1,21 @@
+extraLargeArray:
+insert: 1.1003927 seconds
+append 8.0016 ms
+
+largeArray:
+insert: 10.1059 ms
+append: 693.8 micro seconds
+
+mediumArray:
+insert: 231.2 microseconds
+append:171.1 microseconds
+
+smallArray:
+insert: 85.3 mircoseconds
+append: 162
+
+tinyArray:
+insert: 79.7
+append 169.7 
+
+The pattern I noticed is that the function with the push method was typically faster in it’s runtime. I took this to mean the push method is faster and therefor better at scaling. I did a little research and found out that this is because our system anticipates our stack won’t be big enough and then allocates an extra space at the end. This allows for push to directly get into the array. Whereas with unshift, where unshift puts an element in the beginning of the array, our system does not allocate an extra space and the beginning, seeing that it already has an element there. So when unshift is used the system has to move all the elements that are in the array down one by one, taking the system longer to process the unshift.
