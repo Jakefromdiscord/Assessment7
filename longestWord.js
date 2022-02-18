@@ -12,3 +12,6 @@ const findLongestWord = (string) =>{
 }
 
 console.log(findLongestWord('Jake is Awesome'))
+
+//big o
+//Asnwer: tc: O(1) SC: O(n)
