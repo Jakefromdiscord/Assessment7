@@ -10,3 +10,6 @@ for(i = 0; i < arr.length; i++){
 }
 
 console.log(value)
+
+//My big O
+//ANSWER: O(n^2)
