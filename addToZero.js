@@ -12,4 +12,4 @@ for(i = 0; i < arr.length; i++){
 console.log(value)
 
 //My big O
-//ANSWER: O(n^2)
+//ANSWER: TC: O(n^2) SC: O(n^2)
